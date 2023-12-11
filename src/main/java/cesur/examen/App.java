@@ -10,8 +10,8 @@ import cesur.examen.domain.client.ClientService;
  * EXAMEN DE ACCESO A DATOS
  * Diciembre 2023
  *
- * Nombre del alumno:
- * Fecha:
+ * Nombre del alumno: Froancisco Díaz Roldán
+ * Fecha:11/12/2023
  */
 public class App 
 {
@@ -26,7 +26,7 @@ public class App
      */
 
     // Put your full name in the constant value
-    static final String STUDENT_NAME = "Francisco Romero";
+    static final String STUDENT_NAME = "Francisco Díaz Roldán";
 
     public static void main( String[] args )
     {
@@ -60,6 +60,7 @@ public class App
         car.setPlate("AABBCC");
         clients.get(0).addCar(car);
         (new CarDAO()).save(car);
+
 
         // Show clients again with their cars. We can see the new car added
         clients = (new ClientDAO()).getAll();
