@@ -62,6 +62,7 @@ public class App
         (new CarDAO()).save(car);
 
 
+
         // Show clients again with their cars. We can see the new car added
         clients = (new ClientDAO()).getAll();
         System.out.println("List of clients in database again...");
